@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Launcher</title>
+    <style>body {
+        font-family: times 'Times New Roman', Times, serif;
+        background-color: #000;
+        color: #fff;
+        background-image: url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0');
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+    }
+    .upload-form, .file-list, .celestial-info {
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+    }
+    #fileList {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    #fileList li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+    }
+    
+    .filename {
+        word-break: break-all;
+        max-width: 70%; 
+    }
+    
+    .delete-btn {
+        flex-shrink: 0;
+        margin-left: auto; 
+    }
+    
+    .filename::after {
+        content: '';
+        display: inline-block;
+        width: 50px; 
+    }
+    
+    .delete-btn {
+        background-color: #58016d;
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .delete-btn:hover {
+        background-color: #9b45d4;
+        box-shadow: 0 0 5px rgba(165, 42, 42, 0.5);
+    }
+    button {
+        background-color: #58016d;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #9b45d4;
+    }
+    .countdown {
+        font-size: 48px;
+        text-align: center;
+        margin: 20px 0;
+        animation: pulse 1s infinite;
+    }
+    
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+</style>>
+</head>
+<body>
+    <div class="container">
+        <h1>Cosmic File launcher</h1>
+        <p>Launch your precious files to outer space! Once they land, you can discover more about their new home.</p>
+        <div class="upload-form">
+            <h2>Upload a File</h2>
+            <form id="uploadForm">
+                <input type="file" name="file" required>
+                <button type="submit">Upload to Space</button>
+            </form>
+        </div>
+        <div class="file-list">
+            <h2>Your Cosmic Files</h2>
+            <ul id="fileList"></ul>
+        </div>
+        <div class="celestial-info">
+            <h2>Celestial Body Information</h2>
+            <div id="celestialInfo"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
