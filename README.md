@@ -2,8 +2,9 @@
 
 Cosmic File Explorer is an interactive web application that simulates launching files into space. It combines file uploading functionality with NASA's image API to create an engaging, space-themed user experience.
 
-!(Webpage)[https://github.com/ttuhina/cosmic-file-launcher/blob/main/screenshots/pic%20(2).png]
-!(Webpage)[https://github.com/ttuhina/cosmic-file-launcher/blob/main/screenshots/pic%20(3).png]
+![Webpage](https://github.com/ttuhina/cosmic-file-launcher/blob/main/screenshots/pic%20(2).png)
+
+![Webpage](https://github.com/ttuhina/cosmic-file-launcher/blob/main/screenshots/pic%20(3).png)
 
 ## Features
 
